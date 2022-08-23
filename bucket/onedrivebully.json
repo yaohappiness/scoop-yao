@@ -11,5 +11,6 @@
             "OneDriveBully"
         ]
     ],
-    "checkver": "github"
+    "checkver": "github",
+    "autoupdate": {"url":"https://github.com/ktheod/OneDriveBully/releases/download/v$version/OneDriveBully.msi"}
 }
