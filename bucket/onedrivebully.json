@@ -3,7 +3,7 @@
     "version": "1.2",
     "license": "GPL-3.0-only",
     "url": "https://github.com/ktheod/OneDriveBully/releases/download/v1.2/OneDriveBully.msi",
-    "hash": "sha256:64f209652a4b82e410328ddbbe737334ca580d8824e4d796579e59f9fc312be3",
+    "hash": "c24a7e67b3c4b26a90c6909cba86f1bf9665b9900fe7cd9904efd5a13ee6d534",
     "bin": "onedrivebully.exe",
     "shortcuts": [
         [
