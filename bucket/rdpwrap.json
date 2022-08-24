@@ -1,6 +1,7 @@
 {
     "homepage": "https://github.com/sebaxakerhtc/rdpwrap",
     "license": "Apache-2.0",
+    "description": "sebaxakerhtc 维护的 RDP Wrapper，可以自动下载最新的 rdpwrap.ini，开箱即用。安装需要管理员权限。",
     "version": "1.8.8.7",
     "url": [
         "https://github.com/sebaxakerhtc/rdpwrap/releases/download/v1.8.8.7/RDPW_Uninstaller.exe",
