@@ -2,9 +2,23 @@
     "homepage": "https://github.com/sebaxakerhtc/rdpwrap",
     "license": "Apache-2.0",
     "version": "1.8.8.7",
-    "url": "https://github.com/sebaxakerhtc/rdpwrap/releases/download/v1.8.8.7/RDPW_installer.exe",
+    "url": [
+        "https://github.com/sebaxakerhtc/rdpwrap/releases/download/v1.8.8.7/RDPW_Uninstaller.exe",
+        "https://github.com/sebaxakerhtc/rdpwrap/releases/download/v1.8.8.7/RDPW_installer.exe"
+    ],
+    "pre_install": "SCHTASKS /DELETE /TN RDPWUpdater /F",
+    "installer": {
+        "file": "RDPW_installer.exe",
+        "keep": true
+    },
+    "uninstaller": {
+        "file": "RDPW_Uninstaller.exe"
+    },
     "checkver": "github",
     "autoupdate": {
-        "url": "https://github.com/sebaxakerhtc/rdpwrap/releases/download/v$version/RDPW_installer.exe"
+        "url": [
+            "https://github.com/sebaxakerhtc/rdpwrap/releases/download/v$version/RDPW_Uninstaller.exe",
+            "https://github.com/sebaxakerhtc/rdpwrap/releases/download/v$version/RDPW_installer.exe"
+        ]
     }
 }
