@@ -6,7 +6,14 @@
         "https://github.com/sebaxakerhtc/rdpwrap/releases/download/v1.8.8.7/RDPW_Uninstaller.exe",
         "https://github.com/sebaxakerhtc/rdpwrap/releases/download/v1.8.8.7/RDPW_installer.exe"
     ],
-    "pre_install": "SCHTASKS /DELETE /TN RDPWUpdater /F",
+    "pre_install": [
+        "if (!(is_admin)) {",
+        "    error \"Administrator rights are required to install $app.\"",
+        "    exit 1",
+        "}",
+        "",
+        "SCHTASKS /DELETE /TN RDPWUpdater /F"
+    ],
     "installer": {
         "file": "RDPW_installer.exe",
         "keep": true
