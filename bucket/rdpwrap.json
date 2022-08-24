@@ -11,7 +11,6 @@
         "    error \"Administrator rights are required to install $app.\"",
         "    exit 1",
         "}",
-        "",
         "SCHTASKS /DELETE /TN RDPWUpdater /F"
     ],
     "installer": {
