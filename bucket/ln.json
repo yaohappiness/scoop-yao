@@ -5,6 +5,7 @@
         "identifier": "Shareware",
         "url": "https://schinagl.priv.at/nt/ln/license.txt"
     },
+    "version": "2.9.3.3",
     "architecture": {
         "64bit": {
             "url": "https://schinagl.priv.at/nt/ln/ln64static.zip",
@@ -17,7 +18,6 @@
     },
     "bin": "ln.exe",
     "env_add_path": "bat",
-    "version": "2.9.3.3",
     "checkver": "Last Updated.+?Version ([\\d.]+)",
     "autoupdate": {
         "architecture": {

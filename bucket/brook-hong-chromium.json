@@ -1,0 +1,13 @@
+{
+    "homepage": "https://brookhong.github.io/2021/04/18/brook-build-of-chromium.html",
+    "description": "Brook Hong 编译的 Chromium。允许在禁用插件的页面使用 Surfingkeys，增加了一些不会被合并到 Chromium 官方发行版的功能。",
+    "license": "Unknown",
+    "version": "101.0.4951.54",
+    "url": "https://onedrive-vercel-index-yaohappiness.vercel.app/api/raw/?path=/packages/brook-hong-chromium/101.0.4951.54/Chromium_installer.exe",
+    "hash": "77d963990e113957d787cf6c9d6d89c0b01271d3a5bf1cdd25a45be6c19c41e1",
+    "installer": {},
+    "checkver": {
+        "url": "https://onedrive-vercel-index-yaohappiness.vercel.app/packages/brook-hong-chromium/",
+        "regex": "[\\d.]+\\.LATEST"
+    }
+}
