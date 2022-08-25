@@ -1,15 +1,18 @@
 {
     "homepage": "https://schinagl.priv.at/nt/ln/ln.html",
+    "description": "Windows 链接创建工具，类似 Linux 的 ln，但有很多地方不一样。",
     "license": {
         "identifier": "Shareware",
         "url": "https://schinagl.priv.at/nt/ln/license.txt"
     },
     "architecture": {
         "64bit": {
-            "url": "https://schinagl.priv.at/nt/ln/ln64static.zip"
+            "url": "https://schinagl.priv.at/nt/ln/ln64static.zip",
+            "hash": "7c62bd3f2656c3723c1a9c7bb772ee9ae67e30680e51cdc50bdeed3c7b3bce33"
         },
         "32bit": {
-            "url": "https://schinagl.priv.at/nt/ln/lnstatic.zip"
+            "url": "https://schinagl.priv.at/nt/ln/lnstatic.zip",
+            "hash": "b804efd9ce20aa23b9fca72d1669e54d09fbd5a723b5b33bbf88f57c3dbb453d"
         }
     },
     "bin": "ln.exe",
