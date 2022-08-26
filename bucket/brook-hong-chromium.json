@@ -4,7 +4,7 @@
     "license": "Unknown",
     "version": "99.0.4844.61",
     "url": "https://onedrive-vercel-index-yaohappiness.vercel.app/api/raw/?path=/packages/brook-hong-chromium/99.0.4844.61/Chromium_installer.exe",
-    "hash": "a21aa158777d35d219a5d7bb2ce9bb716083ce0bc767706c573b67252f9bab6c",
+    "hash": "A21AA158777D35D219A5D7BB2CE9BB716083CE0BC7677d35d219a5d7bf9bab6c",
     "installer": {},
     "uninstaller": {
         "script": [
@@ -13,8 +13,8 @@
         ]
     },
     "checkver": {
-        "url": "https://onedrive-vercel-index-yaohappiness.vercel.app/packages/brook-hong-chromium/",
-        "regex": "[\\d.]+\\.LATEST"
+        "url": "https://onedrive-vercel-index-yaohappiness.vercel.app/api/raw/?path=/packages/brook-hong-chromium/latest.txt",
+        "regex": "([\\d.]+)\\.LATEST"
     },
     "autoupdate": {
         "url": "https://onedrive-vercel-index-yaohappiness.vercel.app/api/raw/?path=/packages/brook-hong-chromium/$version/Chromium_installer.exe"
