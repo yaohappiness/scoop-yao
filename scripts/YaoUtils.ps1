@@ -6,8 +6,8 @@
 #
 # TODO
 # 完善函数，规范代码，增加健壮性
-function BackupScoopPackages($Package) {
-    $BackupDir = $Env:OneDrive + "\public\packages\scoop-packages-backup\"
+function BackupScoopPackage($Package) {
+    $BackupDir = $Env:OneDrive + "\public\package\scoop-package-backup\"
     $DestPackage = $BackupDir + $Package
     if (Test-Path $DestPackage -eq "False") {
         New-Item -ItemType HardLink -Target $DestPackage -Path $Env:UserProfile+"\scoop\cache\"+$Package
