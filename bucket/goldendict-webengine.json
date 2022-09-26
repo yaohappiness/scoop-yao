@@ -1,0 +1,37 @@
+{
+    "version": "22.9.23",
+    "homepage": "https://github.com/xiaoyifang/goldendict",
+    "license": "GPL-3.0-only",
+    "url": "https://github.com/xiaoyifang/goldendict/releases/download/v22.9.23-AutumnEquinox.220923.62c66b79/5.15.2-GoldenDict-v22.9.23-AutumnEquinox-Installer.exe#/dl.7z",
+    "hash": "d804f26d93d0d64b5783d14b6c8f4d3e4f5d21f9b1b1ad2948090e5acf7a9511",
+    "bin": [
+        [
+            "GoldenDict.exe",
+            "goldendict-webengine.exe",
+            "gd.exe"
+        ]
+    ],
+    "shortcuts": [
+        [
+            "GoldenDict.exe",
+            "GoldenDict (Webengine)"
+        ]
+    ],
+    "checkver": {
+        "github": "https://github.com/xiaoyifang/goldendict",
+        "regex": "/releases/tag/v([\\d.]+)(.*?)\\.(.*?)\""
+    },
+    "autoupdate": {
+        "url": "https://github.com/xiaoyifang/goldendict/releases/download/v$version$match2.$match3/5.15.2-GoldenDict-v$version$match2-Installer.exe"
+    },
+    "persist": [
+        "portable",
+        "content"
+    ],
+    "post_install":[
+        "$IndexSyncTarget = $Env:OneDrive + '\\language\\dictionary\\goldendict-config\\index'",
+        "New-Item -ItemType Junction -Target $IndexSyncTarget -Path $persist_dir\\portable\\index -Force",
+        "$ContentTarget = $Env:OneDrive + '\\language\\dictionary\\mdx'",
+        "New-Item -ItemType Junction -Target $ContentTarget -Path $persist_dir\\content\\mdx -Force"
+    ]
+}
