@@ -5,10 +5,14 @@
     "url": "https://github.com/xiaoyifang/goldendict/releases/download/v22.9.23-AutumnEquinox.220923.62c66b79/5.15.2-GoldenDict-v22.9.23-AutumnEquinox-Installer.exe#/dl.7z",
     "hash": "d804f26d93d0d64b5783d14b6c8f4d3e4f5d21f9b1b1ad2948090e5acf7a9511",
     "bin": [
+        "GoldenDict.exe",
         [
             "GoldenDict.exe",
-            "goldendict-webengine.exe",
-            "gd.exe"
+            "goldendict-webengine"
+        ],
+        [
+            "GoldenDict.exe",
+            "gd"
         ]
     ],
     "shortcuts": [
@@ -28,7 +32,7 @@
         "portable",
         "content"
     ],
-    "post_install":[
+    "post_install": [
         "$IndexSyncTarget = $Env:OneDrive + '\\language\\dictionary\\goldendict-config\\index'",
         "New-Item -ItemType Junction -Target $IndexSyncTarget -Path $persist_dir\\portable\\index -Force",
         "$ContentTarget = $Env:OneDrive + '\\language\\dictionary\\mdx'",
