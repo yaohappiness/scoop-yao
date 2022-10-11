@@ -1,0 +1,40 @@
+{
+    "homepage": "https://github.com/happynclient/happynwindows",
+    "description": "Happyn Windows 客户端。卸载目前有 Bug，调用的 nssm 是交互式的。",
+    "version": "1.0.8",
+    "hash": "c51091f008f9acc02516bab91dcb83b86754ca65bbfce38876795d718766315f",
+    "url": "https://github.com/happynclient/happynwindows/releases/download/1.0.8-zh-cn/happynet-win-x86-x64-all-1.0.8-zh-cn.zip",
+    "checkver": "/releases/tag/([\\d.]+)(.*)\"",
+    "autoupdate": {
+        "url": "https://github.com/happynclient/happynwindows/releases/download/$1$2/happynet-win-x86-x64-all-$1$2.zip"
+    },
+    "pre_install": [
+        "if (!(is_admin)) {",
+        "    error \"Administrator rights are required to install $app.\"",
+        "    exit 1",
+        "}"
+    ],
+    "installer": {
+        "script": [
+            "$installer = Get-Item $dir\\happynet-win-x86-x64-all-*.exe",
+            "&$installer /S"
+        ]
+    },
+    "pre_uninstall": [
+        "if (!(is_admin)) {",
+        "    error \"Administrator rights are required to uninstall $app.\"",
+        "    exit 1",
+        "}"
+    ],
+    "uninstaller": {
+        "script": [
+            "if(Test-Path $Env:ProgramFiles\\happynet\\happynet_uninst.exe) {",
+                "$uninstaller = \"$Env:ProgramFiles\\happynet\\happynet_uninst.exe\"",
+            "}",
+            "else {",
+                "$uninstaller = \"${env:ProgramFiles(x86)}\\happynet\\happynet_uninst.exe\"",
+            "}",
+            "&\"$uninstaller\" /S"
+        ]
+    }
+}

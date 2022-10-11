@@ -6,7 +6,6 @@
     "url": "https://onedrive-vercel-index-yaohappiness.vercel.app/api/raw/?path=/package/brook-hong-chromium/105.0.5195.113/Chromium_installer.exe",
     "hash": "1e23baa1de2d40d0c76b7694e7b4c1dfa96c53af8dd3facb5cb56be2b3f2dc4a",
     "installer": {
-        
     },
     "uninstaller": {
         "script": [
