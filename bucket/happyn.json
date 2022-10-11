@@ -1,12 +1,15 @@
 {
     "homepage": "https://github.com/happynclient/happynwindows",
-    "description": "Happyn Windows 客户端。卸载目前有 Bug，调用的 nssm 是交互式的。",
-    "version": "1.0.8",
-    "hash": "c51091f008f9acc02516bab91dcb83b86754ca65bbfce38876795d718766315f",
-    "url": "https://github.com/happynclient/happynwindows/releases/download/1.0.8-zh-cn/happynet-win-x86-x64-all-1.0.8-zh-cn.zip",
-    "checkver": "/releases/tag/([\\d.]+)(.*)\"",
+    "description": "Happyn Windows 客户端。卸载目前有 Bug，调用的 nssm 是交互式的。checkver 默认在 github 仓库首页（homepage 设定的地址）里搜索，但是这个仓库的首页的 README.md 引用了其他仓库的 releases。所以要修改 checkver 的 url。",
+    "version": "1.0.7",
+    "hash": "f02052afe731664f01bea6a3bd76871cb5747d8b102906530cd4b3918c4308cf",
+    "url": "https://github.com/happynclient/happynwindows/releases/download/1.0.7-zh-cn/happynet-win-x86-x64-all-1.0.7-zh-cn.zip",
+    "checkver": {
+        "url": "https://github.com/happynclient/happynwindows/releases/latest",
+        "regex": "/releases/tag/([\\d.]+)(.*?)\""
+    },
     "autoupdate": {
-        "url": "https://github.com/happynclient/happynwindows/releases/download/$1$2/happynet-win-x86-x64-all-$1$2.zip"
+        "url": "https://github.com/happynclient/happynwindows/releases/download/$match1$match2/happynet-win-x86-x64-all-$match1$match2.zip"
     },
     "pre_install": [
         "if (!(is_admin)) {",
@@ -29,10 +32,10 @@
     "uninstaller": {
         "script": [
             "if(Test-Path $Env:ProgramFiles\\happynet\\happynet_uninst.exe) {",
-                "$uninstaller = \"$Env:ProgramFiles\\happynet\\happynet_uninst.exe\"",
+            "$uninstaller = \"$Env:ProgramFiles\\happynet\\happynet_uninst.exe\"",
             "}",
             "else {",
-                "$uninstaller = \"${env:ProgramFiles(x86)}\\happynet\\happynet_uninst.exe\"",
+            "$uninstaller = \"${env:ProgramFiles(x86)}\\happynet\\happynet_uninst.exe\"",
             "}",
             "&\"$uninstaller\" /S"
         ]
