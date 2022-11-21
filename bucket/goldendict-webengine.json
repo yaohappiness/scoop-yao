@@ -1,9 +1,9 @@
 {
-    "version": "22.9.23",
+    "version": "22.11.22",
     "homepage": "https://github.com/xiaoyifang/goldendict",
     "license": "GPL-3.0-only",
-    "url": "https://github.com/xiaoyifang/goldendict/releases/download/v22.9.23-AutumnEquinox.220923.62c66b79/5.15.2-GoldenDict-v22.9.23-AutumnEquinox-Installer.exe#/dl.7z",
-    "hash": "d804f26d93d0d64b5783d14b6c8f4d3e4f5d21f9b1b1ad2948090e5acf7a9511",
+    "url": "https://github.com/xiaoyifang/goldendict/releases/download/v22.11.22-LightSnow.221121.a2e258b3/5.15.2-GoldenDict-v22.11.22-LightSnow-Installer.exe",
+    "hash": "6411d7f473ea675831d22cfe14db7939573c317473907c753ca22ede78e9dd39",
     "bin": [
         "GoldenDict.exe",
         [
