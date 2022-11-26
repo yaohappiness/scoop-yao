@@ -5,15 +5,15 @@
         "identifier": "Shareware",
         "url": "https://schinagl.priv.at/nt/ln/license.txt"
     },
-    "version": "2.9.3.3",
+    "version": "2.9.3.4",
     "architecture": {
         "64bit": {
             "url": "https://schinagl.priv.at/nt/ln/ln64static.zip",
-            "hash": "7c62bd3f2656c3723c1a9c7bb772ee9ae67e30680e51cdc50bdeed3c7b3bce33"
+            "hash": "ae86a2dbf2c8f364c1456fa5abcc93629481e35b9b357bb655f337dcfd609ae3"
         },
         "32bit": {
             "url": "https://schinagl.priv.at/nt/ln/lnstatic.zip",
-            "hash": "b804efd9ce20aa23b9fca72d1669e54d09fbd5a723b5b33bbf88f57c3dbb453d"
+            "hash": "7a54e013ec04b468586d3d91bd19975488a79f95e452135aefb146b05f9c2e6a"
         }
     },
     "bin": "ln.exe",
