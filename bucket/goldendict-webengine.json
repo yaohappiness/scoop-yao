@@ -1,9 +1,9 @@
 {
-    "version": "22.11.22",
+    "version": "22.12.22",
     "homepage": "https://github.com/xiaoyifang/goldendict",
     "license": "GPL-3.0-only",
-    "url": "https://github.com/xiaoyifang/goldendict/releases/download/v22.11.22-LightSnow.221121.a2e258b3/5.15.2-GoldenDict-v22.11.22-LightSnow-Installer.exe",
-    "hash": "6411d7f473ea675831d22cfe14db7939573c317473907c753ca22ede78e9dd39",
+    "url": "https://github.com/xiaoyifang/goldendict/releases/download/v22.12.22-WinterSolstice.221220.311d08c6/5.15.2-GoldenDict-v22.12.22-WinterSolstice-Installer.exe",
+    "hash": "4722adc6de4c6849f2a3d758c81a9d8cfe52035bedbfce96458f358bdb89496e",
     "bin": [
         "GoldenDict.exe",
         [
