@@ -1,9 +1,9 @@
 {
-    "version": "22.12.22",
+    "version": "23.02.06",
     "homepage": "https://github.com/xiaoyifang/goldendict",
     "license": "GPL-3.0-only",
-    "url": "https://github.com/xiaoyifang/goldendict/releases/download/v22.12.22-WinterSolstice.221220.311d08c6/5.15.2-GoldenDict-v22.12.22-WinterSolstice-Installer.exe",
-    "hash": "4722adc6de4c6849f2a3d758c81a9d8cfe52035bedbfce96458f358bdb89496e",
+    "url": "https://github.com/xiaoyifang/goldendict/releases/download/v23.02.06-LanternFestival.230208.c9bde81b/5.15.2-GoldenDict-v23.02.06-LanternFestival-Installer.exe",
+    "hash": "47a3b3387b7dd1bc2b0b8220b83358e8e49770aa173628e9e3b3324f6172940e",
     "bin": [
         "GoldenDict.exe",
         [
