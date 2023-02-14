@@ -1,10 +1,10 @@
 {
     "homepage": "https://github.com/happynclient/happynwindows",
     "description": "Happyn Windows 客户端。卸载目前有 Bug，调用的 nssm 是交互式的。checkver 默认在 github 仓库首页（homepage 设定的地址）里搜索，但是这个仓库的首页的 README.md 引用了其他仓库的 releases。所以要修改 checkver 的 url。",
-    "version": "1.2",
-    "hash": "9deea5cda60be5575c586c0cf731549c61539ab8c42f55d214444cd93206d9ea",
+    "version": "1.2.1",
+    "hash": "827503dcf9b5c3c7bc464e3f2946e4983de884a6c3f19b652ebbf50d57bf97f3",
     "license": "GPL-3.0-only",
-    "url": "https://github.com/happynclient/happynwindows/releases/download/1.2-en-us/happynet-win-x86-x64-all-1.2-en-us.zip",
+    "url": "https://github.com/happynclient/happynwindows/releases/download/1.2.1-zh-cn/happynet-win-x86-x64-all-1.2.1-zh-cn.zip",
     "checkver": {
         "url": "https://github.com/happynclient/happynwindows/releases/latest",
         "regex": "/releases/tag/([\\d.]+)(.*?)\""
