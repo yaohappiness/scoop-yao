@@ -1,11 +1,11 @@
 {
     "homepage": "https://github.com/LokerL/tts-vue",
     "description": "微软语音合成工具，使用 Electron + Vue + ElementPlus + Vite 构建。",
-    "version": "1.9.2",
+    "version": "1.9.3",
     "license": "MIT",
-    "url": "https://github.com/LokerL/tts-vue/releases/download/1.9.2/tts-vue-1.9.2.zip",
-    "hash": "5f81afed14b9c36f32d4bdb6601a59626118d55d6a92b2cdec21c12f6673d1b4",
-    "extract_dir": "1.9.2",
+    "url": "https://github.com/LokerL/tts-vue/releases/download/1.9.3/tts-vue-1.9.3.zip",
+    "hash": "945efb2107eede2aed2b484ae56bfe77ae9741f7ce8cb53cb695e5376f526ce0",
+    "extract_dir": "1.9.3",
     "installer": {
         "script": [
             "$installer = Get-Item $dir\\tts-vue_*.exe",
