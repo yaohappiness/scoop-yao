@@ -1,6 +1,6 @@
 {
     "homepage": "https://www.depicus.com/wake-on-lan/wake-on-lan-cmd",
-    "description": "Wake On Lan 命令行工具，支持因特网",
+    "description": "Wake On Lan 命令行工具，支持公网",
     "version": "1.0",
     "license": "Unknown",
     "bin": "wolcmd.exe",
