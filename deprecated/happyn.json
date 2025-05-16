@@ -1,10 +1,10 @@
 {
     "homepage": "https://github.com/happynclient/happynwindows",
     "description": "用 Tailscale，不需要这个软件，所以放到 deprecated。\nHappyn 有时候会占用大量内存，不知道是 Bug 还是挖矿程序？Happyn Windows 客户端。卸载目前有 Bug，调用的 nssm 是交互式的。checkver 默认在 github 仓库首页（homepage 设定的地址）里搜索，但是这个仓库的首页的 README.md 引用了其他仓库的 releases。所以要修改 checkver 的 url。",
-    "version": "1.8",
-    "hash": "8e4b61a9331757e308f16aaeeadfb4ca5e6526422f6d6ce991ea47fc5b972f0a",
+    "version": "1.9",
+    "hash": "4768bae1f831fc56c26d0c0d78ee10ae377fd399dae1e7786ae819a933e58d61",
     "license": "GPL-3.0-only",
-    "url": "https://github.com/happynclient/happynwindows/releases/download/1.8-zh-cn/happynet-win-x86-x64-all-1.8-zh-cn.zip",
+    "url": "https://github.com/happynclient/happynwindows/releases/download/1.9-zh-cn/happynet-win-x86-x64-all-1.9-zh-cn.zip",
     "checkver": {
         "url": "https://github.com/happynclient/happynwindows/releases/latest",
         "regex": "/releases/tag/([\\d.]+)(.*?)\""
